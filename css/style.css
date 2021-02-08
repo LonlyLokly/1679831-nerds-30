@@ -1,0 +1,92 @@
+/* Global */
+
+:root {
+    --basic-black: #000000;
+    --basic-quicksilver: #a6a6a6;
+    --basic-dark: #283136;
+    --basic-red: #fb565a;
+    --basic-extra-light: #eeeeee;
+    --basic-white: #ffffff;
+    --basic-grey:#888888;
+    --basic-green:#00ca74;
+    --basic-orange:#ffc849;
+    --basic-dimgrey:#666666;
+    --basic-gainsboro:#e1e1e1;
+    --basic-goshawkgrey:#444444;
+  }
+
+  .page-body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main navigation */
+
+/* Main navigation */
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-extra-light);
+    background-color: transparent;
+  }
+  
+  .main-navigation-wrapper {
+    background-color: var(--basic-black);
+  }
+  
+  .site-navigation {
+    list-style: none;
+  }
+  
+  
+  /* User navigation */
+  
+  
+  .site-navigation a,
+  .user-navigation a {
+    color: var(--basic-black);
+  }
+  
+  .site-navigation a:hover,
+  .user-navigation a:hover, {
+    background-color: var(--basic-red);
+  }
+
+  .site-navigation a:focus,
+  .user-navigation a:focus {
+    background-color: var(--basic-black);
+  }
+
+  /* Features */
+
+.features-list {
+    list-style: none;
+  }
+  
+  .feature-item {
+    text-align: center;
+  }
+  
+  .feature-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  
