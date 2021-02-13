@@ -1,92 +1,285 @@
 /* Global */
 
 :root {
-    --basic-black: #000000;
-    --basic-quicksilver: #a6a6a6;
-    --basic-dark: #283136;
-    --basic-red: #fb565a;
-    --basic-extra-light: #eeeeee;
-    --basic-white: #ffffff;
+    --text-subtitle-color: #000000;
+    --bascet-color: #a6a6a6;
+    --text-color: #283136;
+    --hover-red-color: #fb565a;
+    --header-fon-color: #eeeeee;
+    --text-in-button-color: #ffffff;
     --basic-grey:#888888;
-    --basic-green:#00ca74;
-    --basic-orange:#ffc849;
+    --button-green-color:#00ca74;
+    --button-orange-color:#ffc849;
     --basic-dimgrey:#666666;
-    --basic-gainsboro:#e1e1e1;
-    --basic-goshawkgrey:#444444;
+    --social-icon-color:#e1e1e1;
+    --text-in-footer-color:#444444;
+    --close-button-modal-color:#fb565f;
+    --button-hover-red: #e74246;
+    --button-active-red: #D7373B;
   }
 
   .page-body {
-    min-width: 960px;
+    min-width: 1157px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    color: var(--basic-white);
+    color: var("--basic-grey");
     text-transform: uppercase;
-    background-color: var(--basic-black);
-    background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 
-  /* Main navigation */
 
 /* Main navigation */
+
+.main-header {
+    background-color:var("--header-fon-color");
+}
 
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
-    color: var(--basic-extra-light);
-    background-color: transparent;
+    background-color:var("--header-fon-color");
   }
   
   .main-navigation-wrapper {
-    background-color: var(--basic-black);
+    color: var("--text-subtitle-color");
+  }
+  
+  .container {
+    font-weight: 500;
   }
   
   .site-navigation {
-    list-style: none;
+    list-style: none; 
   }
-  
   
   /* User navigation */
   
   
   .site-navigation a,
   .user-navigation a {
-    color: var(--basic-black);
+    color: var("--text-subtitle-color");
   }
   
   .site-navigation a:hover,
   .user-navigation a:hover, {
-    background-color: var(--basic-red);
+    background-color: var("--hover-red-color");
   }
 
   .site-navigation a:focus,
   .user-navigation a:focus {
-    background-color: var(--basic-black);
+    background-color: var("--text-subtitle-color");
+    opacity: 0.3;
   }
+
+  .site-navigation a:active,
+  .user-navigation a:active {
+    background-color: var("--text-subtitle-color");
+  }
+
 
   /* Features */
 
-.features-list {
+.features {
+    background-color:var("--header-fon-color");
+}
+
+.feature-item {
     list-style: none;
+}
+  
+.feature-item {
+    color:var("--text-subtitle-color")
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.feature-unique {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.slider-phone {
+    background-image: url("../img/nerdsindexslide11.jpg");
+}
+
+.slider-tv {
+    background-image: url("../img/nerdsindexslide21.jpg");
+}
+
+.slider-phone-tv {
+    background-image: url("../img/nerdsindexslide31.jpg");
+}
+
+.button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+
+
+/*Benefits*/
+
+.benefits-item {
+    list-style: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var("--text-subtitle-color");
+}
+
+.benefits-item-sublime {
+    font-size: 16px;
+    line-height: 24px;
+    color: var("text-color");
+}
+
+/*Commercial*/
+
+.commercial {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var("--text-color");
+}
+
+.commercial-info-slogan {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: var("--text-subtitle-color");
+}
+
+.commercial-info-subtitle {
+    font-weight: bold;
+}
+
+.commercial-promo-slogan {
+    font-weight: bold;
+    color: var("--text-subtitle-color");
+}
+
+.commercial-promo-figures {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px
+}
+
+.commercial-promo-item {
+    list-style: none; 
+}
+
+.commercial-promo-text {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Partners*/
+
+.partners-item a {
+    color: var("--text-subtitle-color");
+    opacity: 0.2;
   }
   
-  .feature-item {
-    text-align: center;
-  }
-  
-  .feature-item h3 {
-    font-size: 30px;
-    line-height: 42px;
+  .partners-item a:hover {
+    color: var("--text-subtitle-color");
   }
 
-  
+  .partners-item a:active {
+    color: var("--text-subtitle-color");
+    opacity: 0.1;
+  }
+
+  .partners-item {
+    list-style: none; 
+  }
+
+  /*Page-footer*/
+
+  /*Footer-contacts*/
+
+.footer-contacts {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: var("text-in-button-color");
+}
+
+.footer-contacts-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: var("--text-subtitle-color:");
+}
+
+.footer-contacts-adress {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var("--basic-dimgrey");
+}
+
+.button-rightus {
+    color: var("text-in-button-color");
+    text-decoration: none;
+}
+
+/*Footer-social*/
+
+.footer-social-slogan {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var("--text-subtitle-color");
+}
+
+.footer-social-text" {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: var("--text-in-footer-color");
+}
+
+/*Modal*/
+
+.modal-description {
+   background-color: var("text-in-button-color"); 
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 18px;
+}
+
+.modal-write {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+    color: var("--text-subtitle-color");
+}
+
+.text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var("--text-in-footer-color");
+}
+
+
+.email {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var("--text-in-footer-color");
+}
+
+
